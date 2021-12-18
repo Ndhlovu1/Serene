@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".dashboards.UserDashboardActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+
+
+      <GridLayout
+          android:id="@+id/main_grid_Dash"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/title"
+          android:rowCount="3"
+          android:columnCount="2"
+          android:layout_margin="10dp"
+          >
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/booklet_card"
+             android:layout_row="0"
+             android:layout_column="0"
+             android:layout_gravity="fill"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_margin="10dp"
+             app:cardCornerRadius="8dp"
+             app:cardElevation="8dp"
+             >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_message"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="CHAT "
+                   android:textStyle="bold"
+                   />
+            </LinearLayout>
+         </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/test_card"
+             android:layout_row="0"
+             android:layout_column="1"
+             android:layout_gravity="fill"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="8dp"
+             app:cardElevation="8dp"
+             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_therapists"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="SPECIALISTS"
+                   android:textStyle="bold"/>
+
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/books_card"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_row="1"
+             android:layout_rowWeight="1"
+             android:layout_column="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="8dp"
+             app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_profile"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PROFILE"
+                   android:textStyle="bold" />
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/study_tips_card"
+             android:layout_row="1"
+             android:layout_column="0"
+             android:layout_gravity="fill"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="8dp"
+             app:cardElevation="8dp"
+             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_settings"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="SETTINGS"
+                   android:textStyle="bold"/>
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+      </GridLayout>
+   </LinearLayout>
+
+
+
+</RelativeLayout>
+

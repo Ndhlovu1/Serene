@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Splash_Screen_Activity">
+
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="416dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/logo"
+        android:transitionName="logo_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="174dp"
+        android:fontFamily="sans-serif-black"
+        android:text="SERENITY"
+        android:transitionName="app_name_logo"
+        android:textColor="#08470F"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <TextView
+        android:id="@+id/catch_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="119dp"
+        android:textColor="#08470F"
+        android:fontFamily="sans-serif-black"
+        android:text="You Deserve Peace Of Mind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
